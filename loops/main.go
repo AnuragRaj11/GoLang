@@ -23,4 +23,6 @@ import
 			case 5:
 			fmt.Println("Friday")
 		}
+
+		
 	}
