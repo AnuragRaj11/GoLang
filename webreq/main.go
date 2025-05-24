@@ -25,4 +25,4 @@ func main() {
 	fmt.Println("Response Status:", res.Status)
 	fmt.Println("Response Body:", string(data))
 }
- 
+  
