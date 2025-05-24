@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"net/url"
 )
@@ -25,5 +26,12 @@ func main() {
 	fmt.Println("URL Query:", parsedURL.Query())
 
 	fmt.Println("URL String:", parsedURL.String())
+
+	jsonData, err := json.Marshal(parsedURL)
+	if err != nil {
+		fmt.Println("Error marshaling URL to JSON:", err)
+		return
+	}
+	fmt.Println("JSON representation of URL:", string(jsonData))
 }
   
