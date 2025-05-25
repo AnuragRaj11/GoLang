@@ -81,7 +81,7 @@ func redirectURLHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println("Starting URL shortener...")
-	OriginalURL := "https://github.com/Prince-1501/"
+	OriginalURL := "https://github.com/AnuragRaj11"
     generateShortURL(OriginalURL)
 	http.HandleFunc("/", rootPageURL)
 	http.HandleFunc("/shorten", shortURLHandler)
